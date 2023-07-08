@@ -79,9 +79,9 @@ class XHSClient:
 
     async def get_note_by_keyword(
             self, keyword: str,
-            page: int = 5, page_size: int = 20,
+            page: int = 1, page_size: int = 20,
             sort: SearchSortType = SearchSortType.MOST_POPULAR,
-            note_type: SearchNoteType = SearchNoteType.IMAGE
+            note_type: SearchNoteType = SearchNoteType.VIDEO,
     ):
         """search note by keyword
 

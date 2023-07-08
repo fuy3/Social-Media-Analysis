@@ -1,5 +1,5 @@
 PLATFORM = "dy"
-KEYWORDS = "自闭症"
+KEYWORDS = "ADHD,ADHD"
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookies
 # If it's on the Xiaohongshu platform, only the web_session cookie will be kept.
 # xhs cookie format -> web_session=040069b2acxxxxxxxxxxxxxxxxxxxx;

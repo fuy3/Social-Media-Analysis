@@ -116,7 +116,7 @@ class XiaoHongShuCrawler(AbstractCrawler):
             logging.info(f"Current keyword: {keyword}")
             note_list: List[str] = []
             max_note_len = 10
-            page = 5
+            page = 1
             while max_note_len > 0:
                 posts_res = await self.xhs_client.get_note_by_keyword(
                     keyword=keyword,
