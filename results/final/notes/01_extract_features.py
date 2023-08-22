@@ -5,7 +5,7 @@ file_path = 'notes_titles.txt'
 
 with open(file_path, 'r') as file:
 
-    comments = 0
+    comments = {}
 
     for line in file:
         # Parse the JSON object from each line
@@ -13,12 +13,14 @@ with open(file_path, 'r') as file:
         start_index = line.find("'note_id': '") + len("'note_id': '")
         end_index = line.find("', 'type': ")
         content = line[start_index:end_index].strip()   
-        
-        #if content in comments:
+
+        if content in comments:
+            print(content)
+        else: 
         #comments += int(content)
-        #comments[content] = 1
-        print("https://www.xiaohongshu.com/explore/" + content)  
-        #print(content)
+            comments[content] = 1
+        #print("https://www.xiaohongshu.com/explore/" + content)  
+            #print(content)
         #comments.append(content) 
-    #print(len(comments)) 
+    print(len(comments)) 
 #print(comments)
