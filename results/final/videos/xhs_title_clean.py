@@ -1,5 +1,5 @@
 # Specify the path to your file
-file_path = '01_crawler_title.txt'
+file_path = '01_crawler_comments.txt'
 
 # Read the file line by line
 comments = {}
